@@ -1,0 +1,108 @@
+\documentclass[10pt,xcolor=svgnames]{beamer} %Beamer
+\usepackage{palatino} %font type
+\usepackage{xcolor}
+\usefonttheme{metropolis} %Type of slides
+\usefonttheme[onlymath]{serif} %font type Mathematical expressions
+\usetheme[progressbar=frametitle,titleformat frame=smallcaps,numbering=counter]{metropolis} %This adds a bar at the beginning of each section.
+\useoutertheme[subsection=false]{miniframes} %Circles in the top of each frame, showing the slide of each section you are at
+\definecolor{polarisbg}{HTML}{202030}
+\definecolor{polarisaqua}{HTML}{0085a1}
+\definecolor{polarisgreen}{HTML}{259169}
+\definecolor{lsfblue}{HTML}{6672d8}
+\definecolor{polarisexamplebody}{HTML}{393956}
+
+\usepackage{appendixnumberbeamer} %enumerate each slide without counting the appendix
+\setbeamercolor{progress bar}{fg=Maroon!70!Coral} %These are the colours of the progress bar. Notice that the names used are the svgnames
+\setbeamercolor{title separator}{fg=DarkSalmon} %This is the line colour in the title slide
+\setbeamercolor{structure}{fg=white} %Colour of the text of structure, numbers, items, blah. Not the big text.
+\setbeamercolor{normal text}{fg=white} %Colour of normal text
+\setbeamercolor{alerted text}{fg=DarkRed!60!Gainsboro} %Color of the alert box
+\setbeamercolor{example text}{fg=Maroon!70!Coral} %Colour of the Example block text
+\setbeamercolor{block title example}{use=example text, fg=white, bg=polarisexamplebody}
+\setbeamercolor{block body example}{use={block title example, example text}, fg=white, bg=polarisexamplebody}
+
+
+\setbeamercolor{palette primary}{bg=polarisbg, fg=white} %These are the colours of the background. Being this the main combination and so one. 
+\setbeamercolor{palette secondary}{bg=polarisbg, fg=white}
+\setbeamercolor{palette tertiary}{bg=polarisbg!40!Black, fg= white}
+\setbeamercolor{section in toc}{fg=polarisbg!40!Black} %Color of the text in the table of contents (toc)
+
+%These next packages are the useful for Physics in general, you can add the extras here. 
+\usepackage{amsmath,amssymb}
+\usepackage{slashed}
+\usepackage{cite}
+\usepackage{relsize}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+\usepackage{geometry}
+\usepackage{xspace}
+\usepackage{url}
+\usepackage{tikz}
+\usetikzlibrary{mindmap,trees}
+\newcommand{\themename}{\textbf{\textsc{bluetemp}\xspace}}%metropolis}}\xspace}
+% \def \confname {OSCW 2021}
+
+\title{Title goes here}
+\author[Name]{Author here (SCxxxxxx)}
+\institute[uni]{Course \\ Indian Institute of Space Science and Technology}
+\date{\today} %Here you can change the date
+\titlegraphic{\vspace{1.5cm}\hfill\includegraphics[width=0.15\textwidth]{images/iist_logo.png}}
+
+\setbeamercolor{background canvas}{bg=polarisbg, fg=white}
+\setbeamercolor{normal text}{fg=white}
+
+\begin{document}
+
+\maketitle
+% \metroset{titleformat=smallcaps} %This changes the titles for small caps
+
+\section{Introduction}
+\begin{frame}{Introduction}
+    Some text
+\end{frame}
+
+\begin{frame}{Motivation}
+    Some more text. \begin{itemize}
+        \item Some text in points
+    \end{itemize}
+\end{frame}
+
+
+\section{New Section}
+
+\begin{frame}[allowframebreaks]{Multi slide frame}
+    
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis blandit rutrum
+diam a accumsan. Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus
+orci luctus et ultrices posuere cubilia curae; Proin eleifend, urna sed mattis
+luctus, neque mi hendrerit est, a vestibulum quam orci porta tortor.
+
+In at ipsum orci. Nunc a nisi vitae nisl finibus mollis nec ac ligula.
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+turpis egestas. Fusce vulputate purus a hendrerit aliquam.
+
+Nunc tempus sapien nibh, ut iaculis nunc suscipit ac. Suspendisse et augue eu
+erat interdum tempor sed ac erat. Vestibulum eget felis at orci porttitor
+viverra. Vivamus cursus sit amet odio vestibulum semper.
+
+\framebreak
+
+Donec pretium eros arcu, et rutrum tellus commodo at. Nulla laoreet risus a
+ullamcorper tempor. Sed imperdiet nisl et dignissim eleifend. Cras ut aliquet
+massa, non dignissim dolor. Vivamus cursus sed elit sed tincidunt. Integer
+sollicitudin eros vestibulum sem egestas vehicula. 
+
+Nunc egestas, nunc vel pulvinar dapibus, mi lectus sodales erat, sit amet
+tincidunt ipsum erat non lorem. Sed varius diam et sem vehicula accumsan. Donec
+volutpat et sapien in ultricies. Orci varius natoque penatibus et magnis dis
+parturient montes, nascetur ridiculus mus.
+    
+\end{frame}
+
+\end{document}

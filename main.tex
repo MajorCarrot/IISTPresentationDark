@@ -5,27 +5,28 @@
 \usefonttheme[onlymath]{serif} %font type Mathematical expressions
 \usetheme[progressbar=frametitle,titleformat frame=smallcaps,numbering=counter]{metropolis} %This adds a bar at the beginning of each section.
 \useoutertheme[subsection=false]{miniframes} %Circles in the top of each frame, showing the slide of each section you are at
-\definecolor{polarisbg}{HTML}{202030}
-\definecolor{polarisaqua}{HTML}{0085a1}
-\definecolor{polarisgreen}{HTML}{259169}
-\definecolor{lsfblue}{HTML}{6672d8}
-\definecolor{polarisexamplebody}{HTML}{393956}
+\definecolor{iistbg}{HTML}{2b2b38}
+\definecolor{iistexampletitlebg}{HTML}{113f5d}
+\definecolor{iistexampletitlefg}{HTML}{ffead4}
+\definecolor{iistexamplefg}{HTML}{eedbc7}
+\definecolor{iistexamplebg}{HTML}{185883}
+\definecolor{iistprogressbar}{HTML}{009af3}
 
 \usepackage{appendixnumberbeamer} %enumerate each slide without counting the appendix
-\setbeamercolor{progress bar}{fg=Maroon!70!Coral} %These are the colours of the progress bar. Notice that the names used are the svgnames
-\setbeamercolor{title separator}{fg=DarkSalmon} %This is the line colour in the title slide
+\setbeamercolor{progress bar}{fg=iistprogressbar} %These are the colours of the progress bar. Notice that the names used are the svgnames
+\setbeamercolor{title separator}{fg=iistprogressbar} %This is the line colour in the title slide
 \setbeamercolor{structure}{fg=white} %Colour of the text of structure, numbers, items, blah. Not the big text.
 \setbeamercolor{normal text}{fg=white} %Colour of normal text
 \setbeamercolor{alerted text}{fg=DarkRed!60!Gainsboro} %Color of the alert box
 \setbeamercolor{example text}{fg=Maroon!70!Coral} %Colour of the Example block text
-\setbeamercolor{block title example}{use=example text, fg=white, bg=polarisexamplebody}
-\setbeamercolor{block body example}{use={block title example, example text}, fg=white, bg=polarisexamplebody}
+\setbeamercolor{block title example}{use=example text, fg=iistexampletitlefg, bg=iistexampletitlebg}
+\setbeamercolor{block body example}{use={block title example, example text}, fg=iistexamplefg, bg=iistexamplebg}
 
 
-\setbeamercolor{palette primary}{bg=polarisbg, fg=white} %These are the colours of the background. Being this the main combination and so one. 
-\setbeamercolor{palette secondary}{bg=polarisbg, fg=white}
-\setbeamercolor{palette tertiary}{bg=polarisbg!40!Black, fg= white}
-\setbeamercolor{section in toc}{fg=polarisbg!40!Black} %Color of the text in the table of contents (toc)
+\setbeamercolor{palette primary}{bg=iistbg, fg=white} %These are the colours of the background. Being this the main combination and so one. 
+\setbeamercolor{palette secondary}{bg=iistbg, fg=white}
+\setbeamercolor{palette tertiary}{bg=iistbg!40!Black, fg= white}
+\setbeamercolor{section in toc}{fg=iistbg!40!Black} %Color of the text in the table of contents (toc)
 
 %These next packages are the useful for Physics in general, you can add the extras here. 
 \usepackage{amsmath,amssymb}
@@ -53,7 +54,7 @@
 \date{\today} %Here you can change the date
 \titlegraphic{\vspace{1.5cm}\hfill\includegraphics[width=0.15\textwidth]{images/iist_logo.png}}
 
-\setbeamercolor{background canvas}{bg=polarisbg, fg=white}
+\setbeamercolor{background canvas}{bg=iistbg, fg=white}
 \setbeamercolor{normal text}{fg=white}
 
 \begin{document}
@@ -64,6 +65,13 @@
 \section{Introduction}
 \begin{frame}{Introduction}
     Some text
+    \begin{example}
+        Some example text
+
+        Which is large
+
+        And complicated
+    \end{example}
 \end{frame}
 
 \begin{frame}{Motivation}
